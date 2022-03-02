@@ -24,22 +24,22 @@
 		</p>
 		<p>
 			Below are screenshots of each step of the evaluation from the original control points of a custom 6 point curve:
-			<img src="Section 1 Part 1 0th.PNG">
+			<br><img src="Section 1 Part 1 0th.PNG">
 			<figcaption>Bezier Curve 0th Level</figcaption>
-			<img src="Section 1 Part 1 1st.PNG">
+			<br><img src="Section 1 Part 1 1st.PNG">
 			<figcaption>Bezier Curve 1st Level</figcaption>
-			<img src="Section 1 Part 1 2nd.PNG">
+			<br><img src="Section 1 Part 1 2nd.PNG">
 			<figcaption>Bezier Curve 2nd Level</figcaption>
-			<img src="Section 1 Part 1 3rd.PNG">
+			<br><img src="Section 1 Part 1 3rd.PNG">
 			<figcaption>Bezier Curve 3rd Level</figcaption>
-			<img src="Section 1 Part 1 4th.PNG">
+			<br><img src="Section 1 Part 1 4th.PNG">
 			<figcaption>Bezier Curve 4th Level</figcaption>
-			<img src="Section 1 Part 1 5th.PNG">
+			<br><img src="Section 1 Part 1 5th.PNG">
 			<figcaption>Bezier Curve 5th Level</figcaption>
 		</p>
 		<p>
 			Below is a screenshot of a slightly different Bezier curve made from moving those 6 control points around and with a different t value:
-			<img src="Section 1 Part 1 Different Curve.PNG">
+			<br><img src="Section 1 Part 1 Different Curve.PNG">
 			<figcaption>Bezier Curve With Different Control Points</figcaption>
 		</p>
 		<h3>
@@ -53,7 +53,7 @@
 		</p>
 		<p>
 			This is a screenshot of bex/teapot.bez evaluated by my implementation:
-			<img src="Section 1 Part 2.PNG">
+			<br><img src="Section 1 Part 2.PNG">
 			<figcaption>teapot.bez</figcaption>
 		</p>
 		<h2>
@@ -70,16 +70,16 @@
 		</p>
 		<p>
 			Here is a screenshot of the dae/teapot.dae with and without using vertex normals for shading:
-			<img src="Part 3 Without Vertex Normal.PNG">
+			<br><img src="Part 3 Without Vertex Normal.PNG">
 			<figcaption>teapot.dae Without Vertex Normal Shading</figcaption>
-			<img src="Part 3 With Vertex Normal.PNG">
+			<br><img src="Part 3 With Vertex Normal.PNG">
 			<figcaption>teapot.dae With Vertex Normal Shadings</figcaption>
 		</p>
 		<h3>
 			Part 4
 		</h3>
 		<p>
-			<img src="edge_flip_diagram.png">
+			<br><img src="edge_flip_diagram.png">
 			<figcaption>Edge Flip Diagram https://cmu-graphics.github.io/Scotty3D/meshedit/local/edge_flip_diagram.png</figcaption>
 		</p>
 		<p>
@@ -87,16 +87,16 @@
 		</p>
 		<p>
 			Here are a couple screenshots showing the teapot before and after some edge flips:
-			<img src="Part 4 Before.PNG">
+			<br><img src="Part 4 Before.PNG">
 			<figcaption>teapot.dae Before Edge Flips</figcaption>
-			<img src="Part 4 After.PNG">
+			<br><img src="Part 4 After.PNG">
 			<figcaption>teapot.dae After Edge Flips</figcaption>
 		</p>
 		<h3>
 			Part 5
 		</h3>
 		<p>
-			<img src="edge_split_diagram.PNG">
+			<br><img src="edge_split_diagram.PNG">
 			<figcaption>Edge Split Diagram https://piazza.com/class/kyerpad7ymj4rl?cid=204_f12</figcaption>
 		</p>
 		<p>
@@ -104,16 +104,16 @@
 		</p>
 		<p>
 			Here are some screenshots showing the teapot before and after some edge splits:
-			<img src="Part 5 Before.PNG">
+			<br><img src="Part 5 Before.PNG">
 			<figcaption>teapot.dae Before Edge Splits</figcaption>
-			<img src="Part 5 After Splits.PNG">
+			<br><img src="Part 5 After Splits.PNG">
 			<figcaption>teapot.dae After Edge Splits</figcaption>
 		</p>
 		<p>
 			Here are some screenshots showing the teapot before and after some edge splits and flips:
-			<img src="Part 5 Before.PNG">
+			<br><img src="Part 5 Before.PNG">
 			<figcaption>teapot.dae Before Edge Splits and Flips</figcaption>
-			<img src="Part 5 After Splits and Flips.PNG">
+			<br><img src="Part 5 After Splits and Flips.PNG">
 			<figcaption>teapot.dae After Edge Splits and Flips</figcaption>
 		</p>
 		<h3>
@@ -127,23 +127,23 @@
 		</p>
 		<p>
 			Upon observation, the sharp corners and edges of meshes tend to disappear into smooth rounded corners when performing loop subdivision. Here is an example:
-			<img src="Part 6 Torus Before.PNG">
+			<br><img src="Part 6 Torus Before.PNG">
 			<figcaption>Torus Before Loop Subdivision</figcaption>
-			<img src="Part 6 Torus After 2 Loops of Subdivision.PNG">
+			<br><img src="Part 6 Torus After 2 Loops of Subdivision.PNG">
 			<figcaption>Torus After 2 Loops of Subdivision</figcaption>
 			However, I discovered you can reduce this effect a little by pre-splitting the edges near the sharp corners. This makes sense because the subdivision algorithm updates the vertex positions to be a weighted average of the vertex positions around it. If there are more points around a vertex that are close, that vertex is more likely to stay within a smaller neighborhood of the original position thus giving the object a "sharper" look at the corners. 
-			<img src="Part 6 Preprocessed Torus Before.PNG">
+			<br><img src="Part 6 Preprocessed Torus Before.PNG">
 			<figcaption>Preprocessed Torus Before Loop Subdivision</figcaption>
-			<img src="Part 6 Preprocessed Torus After 2 Loops of Subdivision.PNG">
+			<br><img src="Part 6 Preprocessed Torus After 2 Loops of Subdivision.PNG">
 			<figcaption>Preprocessed Torus After 2 Loops of Subdivision</figcaption>
 		</p>
 		<p>
 			When performing subdivision on the cube, the cube bacme asymmetric after repeated subdivisions. TO mitigate this, I preprocessed the cube by adding splits and flips on each face to make each face contain more triangles and specifically equal triangles. In doing so, this helped alleviate some of the effects of the asymmetry. This makes sense because there were so few triangles on the cube before that any subdivision has each vertex highly affected by the others in the mesh. By adding more triangles, the averaging algorithm of subdivision becomes smoother. 
-			<img src="Part 6 Cube Before.PNG">
+			<br><img src="Part 6 Cube Before.PNG">
 			<figcaption>Regular Cube After Several Loops of Subdivision</figcaption>
-			<img src="Part 6 Preprocessed Cube Before.PNG">
+			<br><img src="Part 6 Preprocessed Cube Before.PNG">
 			<figcaption>Preprocessed Cube Before Loop Subdivision</figcaption>
-			<img src="Part 6 Preprocessed Cube After.PNG">
+			<br><img src="Part 6 Preprocessed Cube After.PNG">
 			<figcaption>Preprocessed Cube After Several Loops of Subdivision</figcaption>
 		</p>
 		<a href="https://cal-cs184-student.github.io/sp22-project-webpages-alexanderyu217/proj2/index.html">https://cal-cs184-student.github.io/sp22-project-webpages-alexanderyu217/proj2/index.html</a>
