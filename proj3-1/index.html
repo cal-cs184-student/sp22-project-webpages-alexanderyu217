@@ -20,10 +20,10 @@
 		</p>
 		<p>
 			A couple images with normal shading:<br>
-			<img src="CBempty.png">
-			<figcaption>CBempty</figcaption>
-			<img src="CBspheres.png">
-			<figcaption>CBspheres</figcaption>
+			<br><img src="CBempty.png">
+			<figcaption>CBempty</figcaption><br>
+			<br><img src="CBspheres.png">
+			<figcaption>CBspheres</figcaption><br>
 		</p>
 		<h2>
 			Part 2: Bounding Volume Hierarchy
@@ -33,23 +33,23 @@
 		</p>
 		<p>
 			Images with normal shading that can only render with BVH acceleration:
-			<img src="maxplanck.png">
-			<figcaption>maxplanck.dae with tens of thousands of triangles</figcaption>
-			<img src="CBlucy.png">
-			<figcaption>CBlucy.dae with hundreds of thousands of triangles</figcaption>
+			<br><img src="maxplanck.png">
+			<figcaption>maxplanck.dae with tens of thousands of triangles</figcaption><br>
+			<br><img src="CBlucy.png">
+			<figcaption>CBlucy.dae with hundreds of thousands of triangles</figcaption><br>
 		</p>
 		<p>
 			Without BVH acceleration, CBlucy.dae and maxplanck.dae wouldn't even render. However, with BVH acceleration, they rendered in less than a second each. For the cow, it took 11 seconds to render without BVH acceleration wherease with BVH acceleration, it ran in less than a second as well.
-			<img src="cow.png">
-			<figcaption>cow.dae</figcaption>
-			<img src="cow_without_bvh_accel_render_time.png">
-			<figcaption>Rendering of cow.dae without bvh acceleration</figcaption>
-			<img src="cow_with_bvh_accel_render_time.png">
-			<figcaption>Rendering of cow.dae with bvh acceleration</figcaption>
-			<img src="maxplanck_with_bvh_accel_render_time.png">
-			<figcaption>Rendering of maxplanck.dae with bvh acceleration</figcaption>
-			<img src="CBlucy_with_bvh_accel_render_time.png">
-			<figcaption>Rendering of CBlucy.dae with bvh acceleration</figcaption>
+			<br><img src="cow.png">
+			<figcaption>cow.dae</figcaption><br>
+			<br><img src="cow_without_bvh_accel_render_time.png">
+			<figcaption>Rendering of cow.dae without bvh acceleration</figcaption><br>
+			<br><img src="cow_with_bvh_accel_render_time.png">
+			<figcaption>Rendering of cow.dae with bvh acceleration</figcaption><br>
+			<br><img src="maxplanck_with_bvh_accel_render_time.png">
+			<figcaption>Rendering of maxplanck.dae with bvh acceleration</figcaption><br>
+			<br><img src="CBlucy_with_bvh_accel_render_time.png">
+			<figcaption>Rendering of CBlucy.dae with bvh acceleration</figcaption><br>
 		</p>
 		<h2>
 			Part 3: Direct Illumination
@@ -65,34 +65,34 @@
 		<p>
 			Images rendered with both implementations of the direct lighting function (16 samples per pixel):
 
-			<img src="bunny_16s_H.png">
-			<figcaption>CBbunny.dae rendered with uniform hemisphere sampling</figcaption>
-			<img src="bunny_16s.png">
-			<figcaption>CBbunny.dae rendered with importance sampling</figcaption>
-			<img src="spheres16s_H.png">
-			<figcaption>CBspheres_lambertian.dae rendered with uniform hemisphere sampling</figcaption>
-			<img src="spheres16s.png">
-			<figcaption>CBspheres_lambertian.dae rendered with importance sampling</figcaption>
+			<br><img src="bunny_16s_H.png">
+			<figcaption>CBbunny.dae rendered with uniform hemisphere sampling</figcaption><br>
+			<br><img src="bunny_16s.png">
+			<figcaption>CBbunny.dae rendered with importance sampling</figcaption><br>
+			<br><img src="spheres16s_H.png">
+			<figcaption>CBspheres_lambertian.dae rendered with uniform hemisphere sampling</figcaption><br>
+			<br><img src="spheres16s.png">
+			<figcaption>CBspheres_lambertian.dae rendered with importance sampling</figcaption><br>
 		</p>
 		<p>
 			The following are renderings of CBspheres_lambertian.dae using importance sampling:
-			<img src="spheres1ray1sample.png">
-			<figcaption>1 sample, 1 ray per sample</figcaption>
-			<img src="spheres4ray1sample.png">
-			<figcaption>1 sample, 4 rays per sample</figcaption>
-			<img src="spheres16ray1sample.png">
-			<figcaption>1 sample, 16 rays per sample</figcaption>
-			<img src="spheres64ray1sample.png">
-			<figcaption>1 sample, 64 rays per sample</figcaption>
+			<br><img src="spheres1ray1sample.png">
+			<figcaption>1 sample, 1 ray per sample</figcaption><br>
+			<br><img src="spheres4ray1sample.png">
+			<figcaption>1 sample, 4 rays per sample</figcaption><br>
+			<br><img src="spheres16ray1sample.png">
+			<figcaption>1 sample, 16 rays per sample</figcaption><br>
+			<br><img src="spheres64ray1sample.png">
+			<figcaption>1 sample, 64 rays per sample</figcaption><br>
 
 			In these renders of CBspheres_lambertian.dae, the noise levels in soft shadows were a lot higher at lower light ray levels. As the number of light rays per pixel increased, the soft shadows in the renderings became a lot less noisy and smoother. As the number of light rays increased, you could see more of a gradual gradient in the shadow edges vs the sharp and choppy edges rendered with less light rays. 
 		</p>
 		<p>
 			CBspheres_lambertian.dae rendered with 32 rays per sample and 32 samples per pixel:
-			<img src="spheres32ray32sample.png">
-			<figcaption>Rendered with importance sampling</figcaption>
-			<img src="spheres32ray32sample_H.png">
-			<figcaption>Rendered with uniform hemisphere sampling</figcaption>
+			<br><img src="spheres32ray32sample.png">
+			<figcaption>Rendered with importance sampling</figcaption><br>
+			<br><img src="spheres32ray32sample_H.png">
+			<figcaption>Rendered with uniform hemisphere sampling</figcaption><br>
 			Uniform hemisphere and importance sampling produced slightly different results. For the images rendered with uniform hemisphere sampling (espcially at lower ray and sample rates), there was a significant ammount of noise in the rendered image. This is because in uniform hemisphere sampling, many of the samples don't actually end up intersecting with any useful objects that emit light. As a result, some of the pixels rendered with uniform hemisphere sampling will have darker dotted areas where many of the samples didn't intersect with a light source. This is remedied in importance sampling because every incoming ray is sampled from a light source so there is a greater chance that the incoming ray contributes a non zero radiance towards the output radiance. This is why the importance sampled image looks smoother and less noisy than the image generated by uniform hemisphere sampling.
 		</p>
 		<h2>
@@ -103,48 +103,48 @@
 		</p>
 		<p>
 			Some images rendered with global illumination and 1024 samples per pixel:
-			<img src="bunny1024s.png">
-			<figcaption>CBbunny.dae rendered with global illumination with ray depth m = 5</figcaption>
-			<img src="spheres1024s.png">
-			<figcaption>CBspheres_lambertian.dae rendered with global illumination with ray depth m = 5</figcaption>
+			<br><img src="bunny1024s.png">
+			<figcaption>CBbunny.dae rendered with global illumination with ray depth m = 5</figcaption><br>
+			<br><img src="spheres1024s.png">
+			<figcaption>CBspheres_lambertian.dae rendered with global illumination with ray depth m = 5</figcaption><br>
 		</p>
 		<p>
 			CBbunny.dae rendered with only direct illumination and then only indirect illumination at 1024 samples per pixel:
 
-			<img src="bunny1024s_direct.png">
-			<figcaption>CBbunny.dae rendered with only direct illumination</figcaption>
-			<img src="bunny1024s_indirect.png">
-			<figcaption>CBbunny.dae rendered with only indirect illumination</figcaption>
+			<br><img src="bunny1024s_direct.png">
+			<figcaption>CBbunny.dae rendered with only direct illumination</figcaption><br>
+			<br><img src="bunny1024s_indirect.png">
+			<figcaption>CBbunny.dae rendered with only indirect illumination</figcaption><br>
 
 			Looking at the rendered image of CBbunny.dae with only direct lighting vs only indirect lighting, the direct lighting version looks like what you expect. It looks exactly like the image produced in part 3. However, the indirect lighting version looks a little different. The overall illumination of the image is less than that of the direct lighting rendering and the light and dark spots look almost inverted when compared to the direct lighting rendering of CBbunny.dae.
 		</p>
 		<p>
 			CBbunny.dae rendered with four rays per sample and 1024 samples per pixel:
-			<img src="bunny1024s_0.png">
-			<figcaption>Redered with max_ray_depth set to 0</figcaption>
-			<img src="bunny1024s_1.png">
-			<figcaption>Redered with max_ray_depth set to 1</figcaption><img src="bunny1024s_2.png">
-			<figcaption>Redered with max_ray_depth set to 2</figcaption><img src="bunny1024s_3.png">
-			<figcaption>Redered with max_ray_depth set to 3</figcaption><img src="bunny1024s_100.png">
-			<figcaption>Redered with max_ray_depth set to 100</figcaption>
+			<br><img src="bunny1024s_0.png">
+			<figcaption>Redered with max_ray_depth set to 0</figcaption><br>
+			<br><img src="bunny1024s_1.png">
+			<figcaption>Redered with max_ray_depth set to 1</figcaption><br><br><img src="bunny1024s_2.png">
+			<figcaption>Redered with max_ray_depth set to 2</figcaption><br><br><img src="bunny1024s_3.png">
+			<figcaption>Redered with max_ray_depth set to 3</figcaption><br><br><img src="bunny1024s_100.png">
+			<figcaption>Redered with max_ray_depth set to 100</figcaption><br>
 			Between max_ray_depth of 1, 2, 3, and 100, there isn't a huge difference between the rendered image. The only noticeable difference is that the shadow gets slightly and slightly brighter with the increasing number of ray depth. However, this slight increase in brightness becomes less and less noticeable the higher the depth goes. The biggest different in image rendering quality is between a depth of zero and 1. In the zero depth image, there is only direct illlumination which means all areas of the image that aren't directly in the light's path have harsh, dark shadows. 
 		</p>
 		<p>
 			wall-e.dae rendered with various sample-per-pixel rates using 4 light rays:
-			<img src="walle1.png">
-			<figcaption>Rendered with 1 sample per pixel</figcaption>
-			<img src="walle2.png">
-			<figcaption>Rendered with 2 sample per pixel</figcaption>
-			<img src="walle4.png">
-			<figcaption>Rendered with 4 sample per pixel</figcaption>
-			<img src="walle8.png">
-			<figcaption>Rendered with 8 sample per pixel</figcaption>
-			<img src="walle16.png">
-			<figcaption>Rendered with 16 sample per pixel</figcaption>
-			<img src="walle64.png">
-			<figcaption>Rendered with 64 sample per pixel</figcaption>
-			<img src="walle1024.png">
-			<figcaption>Rendered with 1024 sample per pixel</figcaption>
+			<br><img src="walle1.png">
+			<figcaption>Rendered with 1 sample per pixel</figcaption><br>
+			<br><img src="walle2.png">
+			<figcaption>Rendered with 2 sample per pixel</figcaption><br>
+			<br><img src="walle4.png">
+			<figcaption>Rendered with 4 sample per pixel</figcaption><br>
+			<br><img src="walle8.png">
+			<figcaption>Rendered with 8 sample per pixel</figcaption><br>
+			<br><img src="walle16.png">
+			<figcaption>Rendered with 16 sample per pixel</figcaption><br>
+			<br><img src="walle64.png">
+			<figcaption>Rendered with 64 sample per pixel</figcaption><br>
+			<br><img src="walle1024.png">
+			<figcaption>Rendered with 1024 sample per pixel</figcaption><br>
 
 		The rendered views look drastrically different with different samples per pixel. As the number of samples per pixel increases, the ammount of noise per image decreases.
 		</p>
@@ -155,10 +155,10 @@
 			When using a high rate of samples per pixel, many computations are unnecessary. As the number of samples increase or for image pixels that don't change much after repeated sampling, it's possible to stop the sampling of the image at that pixel to conserve compute while achieving image qualities nearly indistinguishable from the full sample rate render. To implement this adaptive sampling, I simply implemented a checked at every <code>samplesPerBatch</code> in <code>raytrace_pixel</code> if the samples generated thus far achieved a tolerance below the intended threshold. If the tolerance was below, I would just simply return the pixel at that moment. If not, I would continue the sampling algorithm. The way the tolerance was checked was using this formula: <MATH>I &lt= maxTolerance * mu </MATH> where <MATH>I = 1.96 * sigma / n</MATH>. mu represents the mean of the samples, sigma represents the standard deviation of the samples, and n represents the number of samples. To calculate mu and sigma, I kept two running variables <code>s1</code> and <code>s2</code>. <code>s1</code> is a running sum of the samples and <code>s2</code> is a running sum of the squared samples. <MATH>mu = s1 / n</MATH> and <MATH>(sigma)^2 = (1 / (n - 1)) * (s2 - (s1)^2 / n</MATH>. 
 		</p>
 		<p>
-			<img src="bunny_part5.png">
-			<figcaption>CBbunny.dae rendered at 2048 samples per pixel, max ray depth 5, and 1 sample per light using adaptive sampling</figcaption>
-			<img src="bunny_part5_rate.png">
-			<figcaption>CBbunny.dae rendering rates at 2048 samples per pixel, max ray depth 5, and 1 sample per light using adaptive sampling</figcaption>
+			<br><img src="bunny_part5.png">
+			<figcaption>CBbunny.dae rendered at 2048 samples per pixel, max ray depth 5, and 1 sample per light using adaptive sampling</figcaption><br>
+			<br><img src="bunny_part5_rate.png">
+			<figcaption>CBbunny.dae rendering rates at 2048 samples per pixel, max ray depth 5, and 1 sample per light using adaptive sampling</figcaption><br>
 			You can clearly see that in regions under direct light, the sampling rate is much lower than the areas where there is light but you can clearly tell it's not direct light from a light source. This makes sense because as you increase the number of samples, the pixels that have values most likely to change are the ones that have complex interactions with the light bouncing around the room. As a result, the corners of the room and the folds on the bunny's body require the most ammount of computation to accurately portray the complex light reflections happening in the scene.
 		</p>
 		<a href="https://cal-cs184-student.github.io/sp22-project-webpages-alexanderyu217/proj2/index.html">https://cal-cs184-student.github.io/sp22-project-webpages-alexanderyu217/proj3-1/index.html</a>
